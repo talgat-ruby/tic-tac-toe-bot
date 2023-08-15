@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Hugmate";
+        src: url('../assets/fonts/hugmate-font/Hugmate-BW22x.otf') format('opentype'),
+        url('../assets/fonts/hugmate-font/Hugmate-8Mll0.ttf') format('truetype');
+    }
+}
+
+/*@layer components {*/
+/*    .players {*/
+/*        display: grid;*/
+/*        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+/*        grid-template-rows: repeat(auto-fill, 1fr);*/
+/*        column-gap: 20px;*/
+/*    }*/
+/*}*/
+
+@layer components {
+    @keyframes progress {
+        from {
+            stroke-dashoffset: 500;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}
+
+/*@layer components {*/
+/*    .playboard {*/
+/*        @apply flex justify-center*/
+/*    }*/
+
+/*    .playboard.player-x .playarea .cell.piece-empty:hover:after {*/
+/*        content: "x";*/
+/*    }*/
+
+/*    .playboard.player-o .playarea .cell.piece-empty:hover:after {*/
+/*        content: "o";*/
+/*    }*/
+
+/*    .playarea {*/
+/*        @apply w-[30vw] aspect-square;*/
+/*        display: grid;*/
+/*        grid-template-columns: repeat(3, calc(95% / 3));*/
+/*        justify-content: space-between;*/
+/*        align-content: space-between;*/
+/*    }*/
+
+/*    .playarea .cell {*/
+/*        @apply flex justify-center items-center aspect-square rounded-2xl bg-info font-['Hugmate'] text-[5vw];*/
+/*    }*/
+
+/*    .playarea .cell.piece-empty:hover {*/
+/*        @apply bg-neutral text-neutral-content cursor-pointer;*/
+/*    }*/
+
+/*    .playarea .cell.piece-x {*/
+/*        @apply text-primary-content bg-warning;*/
+/*    }*/
+
+/*    .playarea .cell.piece-x:after {*/
+/*        content: "x";*/
+/*    }*/
+
+/*    .playarea .cell.piece-o {*/
+/*        @apply text-primary-content bg-error;*/
+/*    }*/
+
+/*    .playarea .cell.piece-o:after {*/
+/*        content: "o";*/
+/*    }*/
+
+/*    .player-info {*/
+/*        @apply flex-1 flex flex-col items-center;*/
+/*    }*/
+
+/*    .player-info .score {*/
+/*        @apply text-4xl;*/
+/*    }*/
+
+/*    .player-info .piece {*/
+/*        @apply mt-3 w-20 flex justify-center items-center aspect-square rounded-2xl bg-neutral font-['Hugmate'] text-4xl text-neutral-content;*/
+/*    }*/
+
+/*    .player-info .piece.piece-x:after {*/
+/*        content: "x";*/
+/*    }*/
+
+/*    .player-info .piece.piece-o:after {*/
+/*        content: "o";*/
+/*    }*/
+
+/*    .playboard.player-x .player-info .piece.piece-x {*/
+/*        @apply text-primary-content bg-warning;*/
+/*    }*/
+
+/*    .playboard.player-o .player-info .piece.piece-o {*/
+/*        @apply text-primary-content bg-error;*/
+/*    }*/
+/*}*/
